@@ -1,39 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conexão Campo-Cidade</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agrinho - Campo & Cidade</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fonte bonita do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Raleway:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#histórias">Histórias</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#eventos">Eventos</a></li>
-                <li><a href="#blog">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="sobre">
-            <h1>Conexão Campo-Cidade</h1>
-            <p>Festejando a conectividade entre o campo e a cidade</p>
-        </section>
-        <section id="histórias">
-            <h2>Histórias</h2>
-            <div class="historia">
-                <img src="img/historia1.jpg" alt="História 1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-            </div>
-            <div class="historia">
-                <img src="img/historia2.jpg" alt="História 2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-            </div>
-        </section>
-    </main>
+
+  <!-- TOPO COM FRASE E NUVENS -->
+  <header id="topo">
+    <h1>🌾 Festejando a Conexão <span class="cidade">Campo</span> 🌆 <span class="cidade">Cidade</span></h1>
+    <p class="subtitulo">Unindo saberes, sabores e valores</p>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#curiosidades">Curiosidades</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#eventos">eventos</a>
+
+    </nav>
+  </header>
+  <!-- SEÇÃO SOBRE -->
+  <section id="sobre">
+    <h2>🌻 Sobre a Conexão</h2>
+    <p>O campo alimenta a cidade. A cidade impulsiona o campo. Essa conexão é essencial para a vida em harmonia. Conheça mais sobre essa parceria cheia de cultura, alimentos e união.</p>
+  </section>
+
+  <!-- SEÇÃO CURIOSIDADES -->
+  <section id="curiosidades">
+    <h2>🍇 Curiosidades</h2>
+    <ul>
+      <li>🧀 Queijos artesanais de fazendas abastecem mercados urbanos.</li>
+      <li>🚜 Máquinas modernas são guiadas por GPS e conectadas à internet.</li>
+      <li>🌱 Muitos jovens do campo usam redes sociais para divulgar seus produtos.</li>
+    </ul>
+  </section>
+
+  <!-- SEÇÃO GALERIA -->
+  <section id="galeria">
+    <h2>📸 Galeria Rural & Urbana</h2>
+    <div class="galeria-grid">
+      <img src="img/campo1.jpg" alt="Campo verde com plantações"/>
+      <img src="img/cidade1.jpg" alt="Cidade com mercado aberto"/>
+      <img src="img/feira.jpg" alt="Feira rural na cidade"/>
+      <img src="img/ponte.jpg" alt="Ponte entre campo e cidade"/>
+    </div>
+  </section>
+<section id="eventos">
+  <h2>🌾 Eventos do Agro</h2>
+  
+  <article class="evento-item">
+    <h3>Agrishow</h3>
+    <p>A maior feira de tecnologia agrícola da América Latina, com exposições de máquinas, inovação e palestras.</p>
+    <div class="video-container">
+      <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/xKxs3yhXnhw" 
+        title="Agrishow 2023 - Vídeo Oficial" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
+  </article>
+  
+  <article class="evento-item">
+    <h3>Expointer</h3>
+    <p>Evento tradicional com exposição de animais, máquinas e tecnologias para o campo.</p>
+    <div class="video-container">
+      <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/3NH5x3iSuKU" 
+        title="Expointer 2022 - Destaques" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
+  </article>
+  
+  <article class="evento-item">
+    <h3>Fenagro</h3>
+    <p>Feira nacional de agropecuária com foco em inovação e sustentabilidade.</p>
+    <div class="video-container">
+      <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/4KrIy9p7DZk" 
+        title="Fenagro 2021 - Highlights" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
+  </article>
+  
+</section>
+
+  <!-- DRONE -->
+  <div id="drone">
+    <img src="drone.avif" alt="Drone voando"/>
+  </div>
+  <audio id="droneSound" src="https://www.soundjay.com/mechanical/sounds/small-drone-01.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
 </body>
 </html>

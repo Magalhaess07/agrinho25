@@ -1,50 +1,124 @@
+/* FONTES */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  font-family: 'Kalam', cursive;
+  background: linear-gradient(to bottom, #d4f8e8, #ffffff);
+  color: #333;
+  scroll-behavior: smooth;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+/* CABEÇALHO */
+header#topo {
+  background: linear-gradient(to right, #76c893, #52b69a);
+  padding: 60px 20px 30px;
+  text-align: center;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
+header h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  animation: flutuar 3s infinite ease-in-out;
 }
 
-nav li {
-    margin-right: 20px;
+header .cidade {
+  color: #ffe066;
+  text-shadow: 1px 1px 2px #000;
 }
 
+.subtitulo {
+  font-size: 1.2em;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* MENU */
 nav a {
-    color: #fff;
-    text-decoration: none;
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: transform 0.2s;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+nav a:hover {
+  transform: scale(1.2);
+  text-shadow: 1px 1px 2px #222;
 }
 
-.historia {
-    background-color: #f7f7f7;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* SEÇÕES */
+section {
+  padding: 60px 30px;
+  text-align: center;
+  animation: entrada 1.5s ease forwards;
+  opacity: 0;
 }
 
-.historia img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2d6a4f;
+}
+
+section p, section ul {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* LISTA DE CURIOSIDADES */
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  padding: 10px 0;
+  font-size: 1.1em;
+}
+
+/* GALERIA */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+.galeria-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 2px 2px 10px #aaa;
+  transition: transform 0.3s;
+}
+.galeria-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* DRONE */
+#drone {
+  position: fixed;
+  top: 80px;
+  left: -150px;
+  width: 100px;
+  z-index: 9999;
+  transition: left 2s ease-in-out;
+}
+#drone img {
+  width: 100%;
+}
+
+/* ANIMAÇÕES */
+@keyframes flutuar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes entrada {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
